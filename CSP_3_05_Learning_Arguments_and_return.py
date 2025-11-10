@@ -1,3 +1,4 @@
+
 #Below you will find several older homework questions done correctly using input
 #and print statements. our task is to take each one and convert it to arguments and returns instead.
 
@@ -6,9 +7,8 @@
 #Then have it print out the larger number
 def larger(n1,n2):
    return max(n1,n2)
-n1=input("give me a number")
-n2 = input("give me a number")
-print(larger(n1,n2))
+
+#print(larger(n1,n2))
 
 
 #Modify the below function such that it asks for the users score as an input.
@@ -29,8 +29,8 @@ def grade(g):
         return ("D")
     else:
         return ("F")
-g = int(input("Give me your grade"))
-print(grade(g))
+#g = int(input("Give me your grade"))
+#print(grade(g))
 #Modify the below function such that it asks the user for a number then
 #if the number is divisible by 3 print "fizz"
 #if the number is divisible by 5 print "buzz"
@@ -45,8 +45,8 @@ def fizzBuzz(n):
         return ("buzz")
     else:
         return(n)
-n = int(input("Give me a number"))
-print(fizzBuzz(n))
+#n = int(input("Give me a number"))
+#print(fizzBuzz(n))
 #modify the below function such that it asks the user for an input number.
 #if the number is even divide it by two.
 #if the number is odd multiply it by 3 and add 1
@@ -58,8 +58,8 @@ def collatz(n):
         return (n/2)
     else:
         return (3*n+1)
-n = int(input("Give me a number"))
-print(collatz(n))
+#n = int(input("Give me a number"))
+#print(collatz(n))
 
 
 
@@ -67,15 +67,15 @@ print(collatz(n))
 #Modify the below function such that it asks the user for a temperature.
 #The format for temperature should end in F For Fahrenheit and C for Celcius
 #Then given the temperature if it is in Fahrenheit convert it to Celsius on vice versa
-#Example 32F -> 0C  20C -> 68F
-def convertTemperature(input):
-    if(input[len(input)-1]=="C"):
-        input = int(input[0:len(input)-1])
+#Example 32F -> 0C  20C ->  68F
+def convertTemperature(n):
+    if(n[len(n)-1]=="C"):
+        input = int(n[0:len(n)-1])
         out = input*(9/5)+32
         return (str(int(out))+"F")
-    elif(input[len(input)-1]=="F"):
-        input = int(input[0:len(input)-1])
-        out = (input-32)*5/9
+    elif(n[len(n)-1]=="F"):
+        input = int(n[0:len(n)-1])
+        out = (int(input)-32)*5/9
         return(str(int(out))+"C")
-input = input("Give me a temperature")
-print(convertTemperature(input))
+#input = input("Give me a temperature")
+#print(convertTemperature(input))
